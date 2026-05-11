@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🤖 AI Spend Audit
+I built this tool to solve a specific headache: AI bill shock. As more teams integrate LLMs, tracking costs across OpenAI, Anthropic, and Gemini becomes a manual mess. This dashboard automates that audit.
 
-## Getting Started
+Live Link: View the Project : https://vercel.com/riyu-hubs-projects/ai-spend-audit/66VbbPxER1fQFgUYVF5ftuT92V9h
 
-First, run the development server:
+🛠 What it actually does
+Centralized Audit: No more jumping between three different billing dashboards.
 
-```bash
+Leak Detection: I built logic to identify where tokens are being wasted (like excessive system prompts).
+
+Passing the Bar: The core audit engine is backed by 7 passing tests to ensure the math is 100% accurate.
+
+🧠 My Process
+This wasn't just about the code. I spent this week focusing on:
+
+User Needs: I talked to 3 potential users to see what they actually care about (check USER_INTERVIEWS.md).
+
+Architecture: I opted for a local-first approach using Next.js to keep data privacy high while keeping the UI snappy.
+
+The Build: You can see my daily progress and the "why" behind my technical choices in DEVLOG.md.
+
+⚙️ Tech Stack
+Core: Next.js (App Router) & TypeScript.
+
+UI: Tailwind CSS for speed, Lucide for the visuals.
+
+Reliability: Vitest for the engine testing.
+
+🚀 Getting Started
+If you're running this locally:
+
+npm install
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel. this is my deployed link : ai-spend-audit-aoeptmvjs-riyu-hubs-projects.vercel.app
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Hit localhost:3000 and start auditing.
