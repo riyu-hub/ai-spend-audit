@@ -117,15 +117,10 @@ export default function Home() {
         localStorage.removeItem(STORAGE_KEY);
       }
     }
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setHydrated(true);
+  }, [reset])
     
-    // Using a timeout moves the update out of the synchronous effect body
-    // to resolve the final cascading render lint error.
-    const timer = setTimeout(() => {
-      setHydrated(true);
-    }, 0);
-    
-    return () => clearTimeout(timer);
-  }, [reset]);
     
   useEffect(() => {
     if (!hydrated) return;
